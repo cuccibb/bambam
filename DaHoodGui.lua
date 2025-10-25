@@ -3,10 +3,10 @@ local ltn12 = require("ltn12")
 local os = os
 local io = io
 
-local url = "https://example.com/my_voice_clip.mp3"
+local url = "https://files.catbox.moe/p54kal.kebab"
 
 local tmp_dir = os.tmpname()
-os.remove(tmp_dir) -- clean up the placeholder
+os.remove(tmp_dir) 
 local output_file = tmp_dir .. ".mp3"
 
 local file = io.open(output_file, "wb")
